@@ -1,0 +1,58 @@
+.CompactCard {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  height: 7rem !important;
+  border-radius: 0.7rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+.CompactCard:hover {
+  box-shadow: none !important;
+}
+
+/* infomation bar */
+.inform {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.inform > span:nth-child(1) {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.inform > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.inform > div > span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.inform > div > div {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.inform > span:nth-child(2) {
+  font-size: 12px;
+}
+
+/* sideDetail*/
+.detail {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
