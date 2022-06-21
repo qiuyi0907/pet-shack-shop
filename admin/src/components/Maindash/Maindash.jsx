@@ -1,17 +1,17 @@
-import React from 'react'
-import Cards from '../Cards/Cards'
-import './Maindash.css'
+import React from "react";
+import Cards from "../Cards/Cards";
+import Table from "../Table/Table";
+import "./Maindash.css";
 
 const Maindash = () => {
   return (
     <div className="MainDash">
-      <div className='title'>
-        Monthly Overview
-      </div>
-       <Cards />
+      <h1>Monthly Overview</h1>
+      <Cards />
+      <h2>Recent Orders</h2>
+      <Table />
     </div>
-   
-  )
-}
+  );
+};
 
-export default Maindash
+export default Maindash;

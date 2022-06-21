@@ -1,3 +1,5 @@
+/* Compacted Card */
+
 .CompactCard {
   display: flex;
   flex: 1;
@@ -55,4 +57,37 @@
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
+}
+
+/* Expanded Card */
+.ExpandedCard {
+  position: absolute;
+  width: 60%;
+  height: 70vh;
+  z-index: 9;
+  left: 13rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+#cross:hover {
+  color:rgb(236, 236, 236);
+}
+ 
+.ExpandedCard > span:nth-of-type(1) {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.ExpandedCard > span:nth-of-type(2) {
+  color: rgb(236, 236, 236);
+  font-size: 20px;
+}
+
+.chartContainer {
+  width: 70%;
 }
