@@ -33,7 +33,7 @@
   width: 97%;
   background: var(--glass);
   border-radius: 2rem;
-  gap: 16px;
+  gap: 25px;
   grid-template-columns: 2fr 6fr 3fr;
   overflow: hidden;
 }
