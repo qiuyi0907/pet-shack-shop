@@ -2,12 +2,10 @@ import React from "react";
 import "./Sidebar.css";
 import Logo from "../../imgs/logo.JPG";
 import { SidebarData } from "../../Data/Data";
-import { UilSignOutAlt } from '@iconscout/react-unicons';
-import { useState } from "react";
+import { UilSignOutAlt } from "@iconscout/react-unicons";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
-  const[selected, setSelected] = useState(0);
-  
   return (
     <div className="Sidebar">
       <div className="logo">
@@ -18,14 +16,16 @@ const Sidebar = () => {
       <div className="menu">
         {SidebarData.map((item, index) => {
           return (
-            <div 
-            className={selected === index ? "menuItem active": "menuItem"}
-            key={index}
-            onClick={() => setSelected(index)}
+            <NavLink
+              to={item.route}
+              className={({ isActive }) =>
+                isActive ? "menuItem active" : "menuItem"
+              }
+              key={index}
             >
               <item.icon />
               <span>{item.heading}</span>
-            </div>
+            </NavLink>
           );
         })}
         <div className="menuItem">

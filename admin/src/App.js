@@ -1,15 +1,24 @@
-import './App.css'
-import Maindash from './components/Maindash/Maindash';
-import Sidebar from './components/Sidebar/Sidebar';
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Orders from "./pages/Orders/Orders";
+import Products from "./pages/Products/Products";
+import Customers from "./pages/Customers/Customers";
 
 function App() {
   return (
     <div className="App">
-        <div className="AppGlass">
-          <Sidebar/>
-          <Maindash />
-          <div></div>
-        </div>
+      <div className="AppGlass">
+      <BrowserRouter>
+          <Routes>
+            <Route path="/" exact element={<Dashboard />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/customers" element={<Customers />} />
+            <Route path="/products" element={<Products />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
+        
     </div>
   );
 }
