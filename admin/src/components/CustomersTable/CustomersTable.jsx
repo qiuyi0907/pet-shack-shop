@@ -17,15 +17,15 @@ import img3 from '../../imgs/img3.png';
 const CustomersTable = () => {
   const columns = [
     {
-      field: "fullName",
-      headerName: "Customer",
-      width: 230,
+      field: "userName",
+      headerName: "Username",
+      width: 220,
       sortable: true,
       renderCell: (params) => {
         return(
           <div className="user">
             <img src={params.row.profilePicture} alt="" />
-            {params.row.fullName}
+            {params.row.userName}
           </div>
         )
       }
@@ -36,7 +36,7 @@ const CustomersTable = () => {
       field: "dateCreated",
       headerName: "Date Created",
       type: "date",
-      width: 160,
+      width: 150,
       editable: true,
     },
     {
@@ -49,10 +49,11 @@ const CustomersTable = () => {
     {
       field: "actions",
       type: "actions",
-      width: 140,
+      width: 200,
       renderCell: (params) => {
         return (
           <div className="action">
+            <button className="actionIcon">Detail</button>
             <EditIcon className="actionIcon"/>
             <DeleteIcon className="actionIcon"/>
           </div>
@@ -64,7 +65,7 @@ const CustomersTable = () => {
   const rows = [
     {
       id: 1,
-      fullName: randomTraderName(),
+      userName: randomTraderName(),
       profilePicture: img1,
       email: randomEmail(),
       dateCreated: randomCreatedDate(),
@@ -72,7 +73,7 @@ const CustomersTable = () => {
     },
     {
       id: 2,
-      fullName: randomTraderName(),
+      userName: randomTraderName(),
       profilePicture: img2,
       email: randomEmail(),
       dateCreated: randomCreatedDate(),
@@ -80,7 +81,7 @@ const CustomersTable = () => {
     },
     {
       id: 3,
-      fullName: randomTraderName(),
+      userName: randomTraderName(),
       profilePicture: img3,
       email: randomEmail(),
       dateCreated: randomCreatedDate(),
@@ -88,7 +89,7 @@ const CustomersTable = () => {
     },
     {
       id: 4,
-      fullName: randomTraderName(),
+      userName: randomTraderName(),
       profilePicture: img1,
       email: randomEmail(),
       dateCreated: randomCreatedDate(),
@@ -96,7 +97,7 @@ const CustomersTable = () => {
     },
     {
       id: 5,
-      fullName: randomTraderName(),
+      userName: randomTraderName(),
       profilePicture: img2,
       email: randomEmail(),
       dateCreated: randomCreatedDate(),
@@ -104,7 +105,7 @@ const CustomersTable = () => {
     },
     {
       id: 6,
-      fullName: randomTraderName(),
+      userName: randomTraderName(),
       profilePicture: img3,
       email: randomEmail(),
       dateCreated: randomCreatedDate(),
@@ -112,7 +113,7 @@ const CustomersTable = () => {
     },
     {
       id: 7,
-      fullName: randomTraderName(),
+      userName: randomTraderName(),
       profilePicture: img1,
       email: randomEmail(),
       dateCreated: randomCreatedDate(),
@@ -120,7 +121,7 @@ const CustomersTable = () => {
     },
     {
       id: 8,
-      fullName: randomTraderName(),
+      userName: randomTraderName(),
       profilePicture: img2,
       email: randomEmail(),
       dateCreated: randomCreatedDate(),
@@ -128,7 +129,7 @@ const CustomersTable = () => {
     },
     {
       id: 9,
-      fullName: randomTraderName(),
+      userName: randomTraderName(),
       profilePicture: img3,
       email: randomEmail(),
       dateCreated: randomCreatedDate(),
@@ -136,7 +137,7 @@ const CustomersTable = () => {
     },
     {
       id: 10,
-      fullName: randomTraderName(),
+      userName: randomTraderName(),
       profilePicture: img1,
       email: randomEmail(),
       dateCreated: randomCreatedDate(),
@@ -144,7 +145,7 @@ const CustomersTable = () => {
     },
     {
       id: 11,
-      fullName: randomTraderName(),
+      userName: randomTraderName(),
       profilePicture: img2,
       email: randomEmail(),
       dateCreated: randomCreatedDate(),
@@ -152,7 +153,7 @@ const CustomersTable = () => {
     },
     {
       id: 12,
-      fullName: randomTraderName(),
+      userName: randomTraderName(),
       profilePicture: img3,
       email: randomEmail(),
       dateCreated: randomCreatedDate(),
@@ -164,6 +165,7 @@ const CustomersTable = () => {
     <div style={{ height: "80%", width: "90%", marginTop: "4rem", marginLeft: "2rem" }}>
       <DataGrid
         rows={rows}
+        disableSelectionOnClick
         columns={columns}
         pageSize={10}
         rowsPerPageOptions={[10]}

@@ -7,7 +7,14 @@ const Customers = () => {
   return (
     <div className="Customers">
       <Sidebar />
-      <CustomersTable />
+      <div className="tableContainer">
+        <div className="buttonContainer">
+          <button>Delete</button>
+          <button>Add new customer</button>
+        </div>
+        <CustomersTable />
+      </div>
+      
     </div>
   );
 };
