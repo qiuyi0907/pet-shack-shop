@@ -36,7 +36,7 @@ const CustomersTable = () => {
       field: "dateCreated",
       headerName: "Date Created",
       type: "date",
-      width: 180,
+      width: 160,
       editable: true,
     },
     {
@@ -49,12 +49,12 @@ const CustomersTable = () => {
     {
       field: "actions",
       type: "actions",
-      width: 160,
+      width: 140,
       renderCell: (params) => {
         return (
           <div className="action">
-            <EditIcon />
-            <DeleteIcon />
+            <EditIcon className="actionIcon"/>
+            <DeleteIcon className="actionIcon"/>
           </div>
         );
       },
@@ -80,6 +80,78 @@ const CustomersTable = () => {
     },
     {
       id: 3,
+      fullName: randomTraderName(),
+      profilePicture: img3,
+      email: randomEmail(),
+      dateCreated: randomCreatedDate(),
+      lastLogin: randomUpdatedDate(),
+    },
+    {
+      id: 4,
+      fullName: randomTraderName(),
+      profilePicture: img1,
+      email: randomEmail(),
+      dateCreated: randomCreatedDate(),
+      lastLogin: randomUpdatedDate(),
+    },
+    {
+      id: 5,
+      fullName: randomTraderName(),
+      profilePicture: img2,
+      email: randomEmail(),
+      dateCreated: randomCreatedDate(),
+      lastLogin: randomUpdatedDate(),
+    },
+    {
+      id: 6,
+      fullName: randomTraderName(),
+      profilePicture: img3,
+      email: randomEmail(),
+      dateCreated: randomCreatedDate(),
+      lastLogin: randomUpdatedDate(),
+    },
+    {
+      id: 7,
+      fullName: randomTraderName(),
+      profilePicture: img1,
+      email: randomEmail(),
+      dateCreated: randomCreatedDate(),
+      lastLogin: randomUpdatedDate(),
+    },
+    {
+      id: 8,
+      fullName: randomTraderName(),
+      profilePicture: img2,
+      email: randomEmail(),
+      dateCreated: randomCreatedDate(),
+      lastLogin: randomUpdatedDate(),
+    },
+    {
+      id: 9,
+      fullName: randomTraderName(),
+      profilePicture: img3,
+      email: randomEmail(),
+      dateCreated: randomCreatedDate(),
+      lastLogin: randomUpdatedDate(),
+    },
+    {
+      id: 10,
+      fullName: randomTraderName(),
+      profilePicture: img1,
+      email: randomEmail(),
+      dateCreated: randomCreatedDate(),
+      lastLogin: randomUpdatedDate(),
+    },
+    {
+      id: 11,
+      fullName: randomTraderName(),
+      profilePicture: img2,
+      email: randomEmail(),
+      dateCreated: randomCreatedDate(),
+      lastLogin: randomUpdatedDate(),
+    },
+    {
+      id: 12,
       fullName: randomTraderName(),
       profilePicture: img3,
       email: randomEmail(),

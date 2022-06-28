@@ -15,3 +15,17 @@
     display: flex;
     justify-content: space-between;
 }
+
+.actionIcon {
+    margin-right: 15px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.actionIcon:nth-child(1):hover {
+    color:#BB67FF;
+}
+
+.actionIcon:nth-child(2):hover {
+    color:#fca61f;
+}
