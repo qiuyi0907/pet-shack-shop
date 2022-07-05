@@ -3,6 +3,14 @@
     align-items: center;
 }
 
+.username {
+    cursor: pointer;
+}
+
+.username:hover {
+    text-decoration: underline;
+}
+
 .user > img {
     width: 32px;
     height: 32px;
@@ -20,27 +28,14 @@
     margin-right: 15px;
     margin-left: 15px;
     cursor: pointer;
-}
-
-.actionIcon:nth-child(1) {
-    background: #fca61f;
-    color: white;
-    border-radius: 10px;
-    border: none;
-    padding: 2px 10px; 
-    font-weight: bold;
+    color: black;
 }
 
 .actionIcon:nth-child(1):hover {
-    background: #F8D49A;
-    /* color: black; */
-}
-
-.actionIcon:nth-child(2):hover {
     color: #fca61f;
 }
 
-.actionIcon:nth-child(3):hover {
+.actionIcon:nth-child(2):hover {
     color:#fca61f;
 }
 

@@ -14,6 +14,13 @@ import img1 from "../imgs/img1.png";
 import img2 from "../imgs/img2.png";
 import img3 from "../imgs/img3.png";
 
+import {
+  randomCreatedDate,
+  randomTraderName,
+  randomEmail,
+  randomUpdatedDate,
+} from "@mui/x-data-grid-generator";
+
 export const SidebarData = [
   {
     icon: UilEstate,
@@ -113,5 +120,104 @@ export const UpdatesData = [
     name: "Iron Man",
     noti: "has ordered Apple smart watch, samsung Gear 2500mh battery.",
     time: "2 hours ago",
+  },
+];
+
+export const UserRows = [
+  {
+    id: 1,
+    userName: randomTraderName(),
+    profilePicture: img1,
+    email: randomEmail(),
+    dateCreated: randomCreatedDate(),
+    lastLogin: randomUpdatedDate(),
+  },
+  {
+    id: 2,
+    userName: randomTraderName(),
+    profilePicture: img2,
+    email: randomEmail(),
+    dateCreated: randomCreatedDate(),
+    lastLogin: randomUpdatedDate(),
+  },
+  {
+    id: 3,
+    userName: randomTraderName(),
+    profilePicture: img3,
+    email: randomEmail(),
+    dateCreated: randomCreatedDate(),
+    lastLogin: randomUpdatedDate(),
+  },
+  {
+    id: 4,
+    userName: randomTraderName(),
+    profilePicture: img1,
+    email: randomEmail(),
+    dateCreated: randomCreatedDate(),
+    lastLogin: randomUpdatedDate(),
+  },
+  {
+    id: 5,
+    userName: randomTraderName(),
+    profilePicture: img2,
+    email: randomEmail(),
+    dateCreated: randomCreatedDate(),
+    lastLogin: randomUpdatedDate(),
+  },
+  {
+    id: 6,
+    userName: randomTraderName(),
+    profilePicture: img3,
+    email: randomEmail(),
+    dateCreated: randomCreatedDate(),
+    lastLogin: randomUpdatedDate(),
+  },
+  {
+    id: 7,
+    userName: randomTraderName(),
+    profilePicture: img1,
+    email: randomEmail(),
+    dateCreated: randomCreatedDate(),
+    lastLogin: randomUpdatedDate(),
+  },
+  {
+    id: 8,
+    userName: randomTraderName(),
+    profilePicture: img2,
+    email: randomEmail(),
+    dateCreated: randomCreatedDate(),
+    lastLogin: randomUpdatedDate(),
+  },
+  {
+    id: 9,
+    userName: randomTraderName(),
+    profilePicture: img3,
+    email: randomEmail(),
+    dateCreated: randomCreatedDate(),
+    lastLogin: randomUpdatedDate(),
+  },
+  {
+    id: 10,
+    userName: randomTraderName(),
+    profilePicture: img1,
+    email: randomEmail(),
+    dateCreated: randomCreatedDate(),
+    lastLogin: randomUpdatedDate(),
+  },
+  {
+    id: 11,
+    userName: randomTraderName(),
+    profilePicture: img2,
+    email: randomEmail(),
+    dateCreated: randomCreatedDate(),
+    lastLogin: randomUpdatedDate(),
+  },
+  {
+    id: 12,
+    userName: randomTraderName(),
+    profilePicture: img3,
+    email: randomEmail(),
+    dateCreated: randomCreatedDate(),
+    lastLogin: randomUpdatedDate(),
   },
 ];
