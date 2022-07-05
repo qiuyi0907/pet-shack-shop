@@ -3,14 +3,6 @@
     align-items: center;
 }
 
-.username {
-    cursor: pointer;
-}
-
-.username:hover {
-    text-decoration: underline;
-}
-
 .user > img {
     width: 32px;
     height: 32px;
