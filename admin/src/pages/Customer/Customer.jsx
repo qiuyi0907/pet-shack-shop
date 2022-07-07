@@ -7,8 +7,8 @@ import {
   MailOutline,
   PermIdentity,
   PhoneAndroid,
-  // Publish,
 } from "@mui/icons-material";
+import EditIcon from '@mui/icons-material/Edit';
 
 const Customer = () => {
   return (
@@ -25,7 +25,6 @@ const Customer = () => {
       >
         <div className="userTitleContainer">
           <h1 className="userTitle">Edit User</h1>
-          <button className="userAddButton">Create</button>
         </div>
         <div className="userContainer">
           <div className="userShow">
@@ -118,7 +117,10 @@ const Customer = () => {
                     alt=""
                   />
                   <label htmlFor="file">
-                    {/* <Publish className="userUpdateIcon" /> */}
+                    <button className="userUpdateProfileButton">
+                      <EditIcon style={{fontSize: "18px"}}/>
+                      <span>Edit</span>
+                    </button>
                   </label>
                   <input type="file" id="file" style={{ display: "none" }} />
                 </div>

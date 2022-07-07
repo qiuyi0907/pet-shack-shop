@@ -29,7 +29,7 @@
 
 .userUpdate {
   flex: 2;
-  padding: 20px;
+  padding: 20px 50px;
   -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   margin-left: 10px;
@@ -55,15 +55,15 @@
 
 .userShowUsername {
   font-weight: 600;
-  font-size: 18px
+  font-size: 18px;
 }
 
 .userShowUserTitle {
   font-weight: 300;
 }
 
-.userShowBottom{
-    margin-top: 20px;
+.userShowBottom {
+  margin-top: 20px;
 }
 
 .userShowTitle {
@@ -72,80 +72,79 @@
   color: rgb(175, 170, 170);
 }
 
-.userShowInfo{
-    display: flex;
-    align-items: center;
-    margin: 25px 0px;
-    color: #444;
+.userShowInfo {
+  display: flex;
+  align-items: center;
+  margin: 25px 0px;
+  color: #444;
 }
 
-.userShowIcon{
-    font-size: 18px !important;
+.userShowIcon {
+  font-size: 18px !important;
 }
 
-.userShowInfoTitle{
-    margin-left: 10px;
-    font-size: 18px;
+.userShowInfoTitle {
+  margin-left: 10px;
+  font-size: 18px;
 }
 
-.userUpdateTitle{
-    font-size: 28px;
-    font-weight: 600;
+.userUpdateTitle {
+  font-size: 28px;
+  font-weight: 600;
 }
 
-.userUpdateForm{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+.userUpdateForm {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
-.userUpdateItem{
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
+.userUpdateItem {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
-.userUpdateItem>label{
-    margin-bottom: 5px;
-    font-size: 16px;
+.userUpdateItem > label {
+  margin-bottom: 5px;
+  font-size: 16px;
 }
 
-.userUpdateInput{
-    border: none;
-    width: 250px;
-    height: 30px;
-    border-bottom: 1px solid gray;
+.userUpdateInput {
+  border: none;
+  width: 250px;
+  height: 30px;
+  border-bottom: 1px solid gray;
 }
 
-.userUpdateRight{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.userUpdateRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.userUpdateUpload{
-    display: flex;
-    align-items: center;
+.userUpdateUpload {
+  margin-top: 20px;
 }
 
-.userUpdateImg{
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-right: 20px;
+.userUpdateImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
 }
 
-.userUpdateIcon{
-    cursor: pointer;
+.userUpdateProfileButton {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  width: 70px;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 15px;
 }
 
-/* .userUpdateButton{
-    border-radius: 5px;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-    background-color: darkblue;
-    color: white;
-    font-weight: 600;
-} */
+.userUpdateProfileButton:hover {
+  border-radius: 10px;
+}
