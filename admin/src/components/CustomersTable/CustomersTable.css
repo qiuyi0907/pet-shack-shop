@@ -3,6 +3,18 @@
     align-items: center;
 }
 
+.user > a {
+    text-decoration: none !important;
+}
+
+.username {
+    color: black;
+}
+
+.username:hover {
+    text-decoration: underline;
+}
+
 .user > img {
     width: 32px;
     height: 32px;
