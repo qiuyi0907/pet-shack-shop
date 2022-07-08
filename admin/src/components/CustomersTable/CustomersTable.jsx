@@ -28,7 +28,7 @@ const CustomersTable = () => {
         return (
           <div className="user">
             <img src={params.row.profilePicture} alt="" />
-            <Link to={"/customers/" + params.row.id} >
+            <Link to={`/customers/${params.row.id}`} >
               <span className="username">{params.row.userName}</span>
             </Link>
           </div>
@@ -95,9 +95,9 @@ const CustomersTable = () => {
         <button onClick={() => deleteMultipleData()}>
           Delete Selected Customer
         </button>
-        {/* <Link to={"/customers/addnewcustomer"}> */}
+        <Link to={"/customers/newcustomer"}>
           <button>Add New Customer</button>
-        {/* </Link> */}
+        </Link>
       </div>
       <div style={{ height: "80%", width: "90%", marginLeft: "2rem" }}>
         <DataGrid

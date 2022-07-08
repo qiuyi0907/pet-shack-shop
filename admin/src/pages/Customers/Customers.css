@@ -1,11 +1,11 @@
 .Customers {
-    display: grid;
-    height: 100%;
-    width: 100%;
-    gap: 25px;
-    grid-template-columns: 2fr 9fr;
-    overflow: hidden;
-  }
+  display: grid;
+  height: 100%;
+  width: 100%;
+  gap: 25px;
+  grid-template-columns: 2fr 9fr;
+  overflow: hidden;
+}
 
 .tableContainer {
   display: flex;
@@ -21,19 +21,20 @@
   justify-content: space-between;
   margin-left: 2rem;
   margin-top: 3rem;
+  margin-bottom: 2px;
 }
 
- button {
+button {
   background: #fca61f;
   font-size: 16px;
   color: white;
   border: none;
-  padding: 2px 10px; 
+  padding: 2px 10px;
   /* font-weight: bold; */
   margin: 5px 5px;
   cursor: pointer;
 }
 
- button:hover {
+button:hover {
   background: #ffbd52;
 }

@@ -10,9 +10,13 @@ import {
 } from "@mui/icons-material";
 import EditIcon from "@mui/icons-material/Edit";
 import { UserRows } from "../../Data/Data";
+import { useLocation } from "react-router-dom";
 const Customer = () => {
-  const id = 1;
-  const personalData = UserRows[id];
+  const location = useLocation();
+  const userID = location.pathname.split("/")[2];
+  const personalData = UserRows.filter((user) => user.id.toString() === userID)[0];
+  console.log(personalData);
+
   return (
     <div className="customer">
       <Sidebar />
@@ -26,7 +30,7 @@ const Customer = () => {
         }}
       >
         <div className="userTitleContainer">
-          <h1 className="userTitle">User Detail Information</h1>
+          <h1 className="userTitle">User Information</h1>
         </div>
         <div className="userContainer">
           <div className="userShow">
@@ -81,7 +85,7 @@ const Customer = () => {
                   <label>Full Name</label>
                   <input
                     type="text"
-                    placeholder={personalData.firstName}
+                    placeholder= {`${personalData.firstName} ${personalData.lastName}`}
                     className="userUpdateInput"
                   />
                 </div>
