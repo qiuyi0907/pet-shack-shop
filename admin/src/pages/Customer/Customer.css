@@ -16,7 +16,6 @@
 .userContainer {
   display: flex;
   margin-top: 20px;
-  height: 70%;
 }
 
 .userShow {
@@ -144,4 +143,9 @@
 
 .userUpdateProfileButton:hover {
   border-radius: 10px;
+}
+
+.back-btn {
+  margin-top: 10px;
+  float: right;
 }

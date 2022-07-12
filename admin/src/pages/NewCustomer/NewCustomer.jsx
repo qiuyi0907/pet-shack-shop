@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import "./NewCustomer.css";
 
@@ -57,6 +58,10 @@ const NewCustomer = () => {
           </div>
           <button className="newUserButton">Create</button>
         </form>
+
+        <Link to={"/customers/"}>
+          <button className="back-btn">Back</button>
+        </Link>
       </div>
     </div>
   );

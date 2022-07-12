@@ -10,11 +10,13 @@ import {
 } from "@mui/icons-material";
 import EditIcon from "@mui/icons-material/Edit";
 import { UserRows } from "../../Data/Data";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 const Customer = () => {
   const location = useLocation();
   const userID = location.pathname.split("/")[2];
-  const personalData = UserRows.filter((user) => user.id.toString() === userID)[0];
+  const personalData = UserRows.filter(
+    (user) => user.id.toString() === userID
+  )[0];
   console.log(personalData);
 
   return (
@@ -41,23 +43,31 @@ const Customer = () => {
                 className="userShowImg"
               />
               <div className="userShowTopTitle">
-                <span className="userShowUsername">{personalData.firstName} {personalData.lastName}</span>{" "}
+                <span className="userShowUsername">
+                  {personalData.firstName} {personalData.lastName}
+                </span>{" "}
               </div>
             </div>
             <div className="userShowBottom">
               <span className="userShowTitle">Account Details</span>
               <div className="userShowInfo">
                 <PermIdentity className="userShowIcon" />
-                <span className="userShowInfoTitle">{personalData.userName}</span>
+                <span className="userShowInfoTitle">
+                  {personalData.userName}
+                </span>
               </div>
               <div className="userShowInfo">
                 <CalendarToday className="userShowIcon" />
-                <span className="userShowInfoTitle">{personalData.birthday}</span>
+                <span className="userShowInfoTitle">
+                  {personalData.birthday}
+                </span>
               </div>
               <span className="userShowTitle">Contact Details</span>
               <div className="userShowInfo">
                 <PhoneAndroid className="userShowIcon" />
-                <span className="userShowInfoTitle">{personalData.phoneNumber}</span>
+                <span className="userShowInfoTitle">
+                  {personalData.phoneNumber}
+                </span>
               </div>
               <div className="userShowInfo">
                 <MailOutline className="userShowIcon" />
@@ -65,7 +75,9 @@ const Customer = () => {
               </div>
               <div className="userShowInfo">
                 <LocationSearching className="userShowIcon" />
-                <span className="userShowInfoTitle">{personalData.address}</span>
+                <span className="userShowInfoTitle">
+                  {personalData.address}
+                </span>
               </div>
             </div>
           </div>
@@ -85,7 +97,7 @@ const Customer = () => {
                   <label>Full Name</label>
                   <input
                     type="text"
-                    placeholder= {`${personalData.firstName} ${personalData.lastName}`}
+                    placeholder={`${personalData.firstName} ${personalData.lastName}`}
                     className="userUpdateInput"
                   />
                 </div>
@@ -134,6 +146,9 @@ const Customer = () => {
             </form>
           </div>
         </div>
+        <Link to={"/customers/"}>
+          <button className="back-btn">Back</button>
+        </Link>
       </div>
     </div>
   );

@@ -166,3 +166,5 @@ export const UserRows = [
     lastLogin: randomUpdatedDate(),
   },
 ];
+
+export const OrderRows = [];

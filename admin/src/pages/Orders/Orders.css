@@ -1,9 +1,13 @@
 .Orders {
-    display: grid;
-    height: 100%;
-    width: 100%;
-    gap: 25px;
-    grid-template-columns: 2fr 9fr;
-    overflow: hidden;
-  }
-  
+  display: grid;
+  height: 100%;
+  width: 100%;
+  gap: 25px;
+  grid-template-columns: 2fr 9fr;
+  overflow: hidden;
+}
+
+.ordertTableContainer {
+  display: flex;
+  flex-direction: column;
+}
