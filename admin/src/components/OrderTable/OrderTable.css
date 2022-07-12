@@ -5,3 +5,15 @@
 .order-btn:hover {
     background: #d5aff5;
 }
+
+.orderStatus {
+    text-transform: uppercase;
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.productDetails {
+    text-decoration: underline;
+    cursor: pointer;
+}

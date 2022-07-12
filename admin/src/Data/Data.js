@@ -167,4 +167,26 @@ export const UserRows = [
   },
 ];
 
-export const OrderRows = [];
+export const OrderRows = [
+  {
+    id: 1,
+    username:"randomname",
+    status: "paid",
+    date: randomCreatedDate(),
+    payment: 209.50,
+  },
+  {
+    id: 2,
+    username:"randomname",
+    status: "paid",
+    date: randomCreatedDate(),
+    payment: 219.50,
+  },
+  {
+    id: 3,
+    username:"randomname",
+    status: "paid",
+    date: randomCreatedDate(),
+    payment: 229.50,
+  }
+];
